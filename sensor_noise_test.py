@@ -10,10 +10,16 @@ def check_obstacle(distance):
         return "MOVE FORWARD"
 
 
+def calculate_median(readings):
+    sorted_readings = sorted(readings)
+    middle = len(sorted_readings) // 2
+    return sorted_readings[middle]
+
+
 readings = [20, 21, 19, 22, 80]
 
 average = sum(readings) / len(readings)
-median = sorted(readings)[len(readings) // 2]
+median = calculate_median(readings)
 
 print("Readings:", readings)
 print("Average:", average, "cm")
