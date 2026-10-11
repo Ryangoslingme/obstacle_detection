@@ -46,3 +46,22 @@ Day 1 completed: basic obstacle-detection logic.
 * Integrate sensor readings with a robot controller.
 
 **Note:** This version uses sample distance values, not live hardware sensor measurements.
+
+### Day 3: Sensor Noise and Filtering
+
+**Topics learned:**
+- Calculated the average of multiple simulated distance readings.
+- Used the average distance with obstacle-detection decision logic.
+- Learned how an extreme sensor reading can distort the average.
+- Compared the mean and median to understand sensor filtering.
+
+**Example readings:** `[20, 21, 19, 22, 80]`
+
+- Average distance: `32.4 cm`
+- Median distance: `21 cm`
+- Average-based action: `CAUTION`
+- Median-based action: `SLOW`
+
+**Key learning:** The average can be affected by unusually high or low readings, while the median can be more robust to extreme readings.
+
+**Status:** Completed Python simulation exercises. Readings are simulated, not live hardware measurements.
