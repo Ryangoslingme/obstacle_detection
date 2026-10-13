@@ -65,3 +65,12 @@ Day 1 completed: basic obstacle-detection logic.
 **Key learning:** The average can be affected by unusually high or low readings, while the median can be more robust to extreme readings.
 
 **Status:** Completed Python simulation exercises. Readings are simulated, not live hardware measurements.
+
+### Day 5 — Python + Webots Sensor Reading
+
+- Connected a Python controller to a Webots robot.
+- Read proximity sensor `ps0` using `sensor.getValue()`.
+- Used a `while` loop to read the sensor continuously.
+- Used `if/else` to classify sensor readings.
+- Observed readings around 60–75 during testing.
+- Obstacle-detection threshold still needs calibration; reliable detection has not yet been confirmed.
